@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="irfan.smsapp.MainActivity">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:textStyle="bold"
+        android:text="From"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+   <EditText
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"
+       android:hint="Enter Sender Name"
+       android:gravity="center"
+       android:textSize="20dp"
+       android:textStyle="normal"
+       android:layout_margin="10dp"
+       android:id="@+id/sender"/>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:textStyle="bold"
+        android:text="T0"
+        android:textSize="20dp"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="enter Receiver Name"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:layout_margin="10dp"
+        android:id="@+id/receive"/>
+</LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="Message......"
+        android:gravity="top"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"
+        android:background="@android:color/darker_gray"
+        android:id="@+id/message"/>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:textStyle="bold"
+    android:background="@android:color/holo_blue_dark"
+    android:text="Send"
+    android:id="@+id/send"
+    android:textSize="20dp"/>
+</LinearLayout>
